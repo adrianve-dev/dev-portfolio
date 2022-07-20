@@ -1,0 +1,20 @@
+.blueGlow {
+    text-shadow: 1px 1px 0.5em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1;
+}
+
+.blueGlowLg {
+    text-shadow: 1px 1px 0.5em #4141e1;
+}
+
+.parallelogram {
+    content: "";
+    background: #242436;
+    opacity: 30%;
+    left: auto;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    transform: skewX(-33deg);
+    transform-origin: right bottom;
+    z-index: -1;
+}
