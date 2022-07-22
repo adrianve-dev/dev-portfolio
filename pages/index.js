@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import decorations from '../styles/decorations.module.css'
-import { Container } from 'reactstrap'
+import hexagon from '../styles/hexagon.module.css'
+import { Container, Row, Col } from 'reactstrap'
 
 export default function Home() {
   return (
@@ -14,17 +15,71 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <span className={[decorations.blueGlowLg]}>
+        <h1 className={[decorations.blueGlowLg, styles.title, 'text-center', 'mb-5'].join(' ')}>
             Web3 Fullstack Development
-          </span>
         </h1>
 
-        <p className={['lead', decorations.blueGlow].join(' ')}>
-          Get started
-        </p>
+        <Row className='my-3'>
+          <Col sm='6'>
+            <div className={hexagon.hexContainer}>
+              <div className={hexagon.hexShadowOuter}>
+                <div className={hexagon.hexShadowCore}>
+                  <div className={hexagon.hexClip}>
+                      <div className={hexagon.hexText}>WEB3</div>  
+                      <Image className={hexagon.hexImage} src="/img/website-blue.png" alt="Web3" layout="fill" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col sm='6'className={['lead', 'm-auto', 'text-center'].join(' ')}>
+            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+              This is some text here that describes the project so clients can view what we are doing
+            </div>
+          </Col>
+        </Row>
+        
+        <Row className='my-3'>
+          <Col sm='6' className='order-sm-1'>
+            <div className={hexagon.hexContainer}>
+              <div className={hexagon.hexShadowOuter}>
+                <div className={hexagon.hexShadowCore}>
+                  <div className={hexagon.hexClip}>
+                      <div className={hexagon.hexText}>MOBILE</div>  
+                      <Image className={hexagon.hexImage} src="/img/phone-blue.png" alt="Mobile" layout="fill" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col sm='6' className={['lead', 'm-auto', 'text-center', 'order-sm-0'].join(' ')}>
+            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+              This is some text here that describes the project so clients can view what we are doing
+            </div>
+          </Col>
+        </Row>
 
-      <div className={decorations.parallelogram}></div>
+        <Row className='my-3'>
+          <Col sm='6'>
+            <div className={hexagon.hexContainer}>
+              <div className={hexagon.hexShadowOuter}>
+                <div className={hexagon.hexShadowCore}>
+                  <div className={hexagon.hexClip}>
+                      <div className={hexagon.hexText}>ETHEREUM</div>  
+                      <Image className={hexagon.hexImage} src="/img/eth-logo-blue.png" alt="Web3" layout="fill" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col sm='6' className={['lead', 'm-auto', 'text-center'].join(' ')}>
+            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+              This is some text here that describes the project so clients can view what we are doing
+            </div>
+          </Col>
+        </Row>
+
+        <div className={decorations.parallelogram}></div>
       </main>
 
       <footer className={styles.footer}>

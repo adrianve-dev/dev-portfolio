@@ -1,0 +1,65 @@
+.hexText {
+    text-align: center;
+    color: #ddf;
+    padding-top: 4.5em;
+    position: relative;
+    text-shadow: 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1, 1px 1px 1em #4141e1;
+  }
+  
+  .hexContainer {
+    position: relative;
+    width: 20em;
+    margin: auto;
+  }
+  
+  .hexClip {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    overflow: hidden;
+    background: rgba(0, 0, 25, 1);
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+  }
+
+  .hexClip:hover > .hexText {
+    color: rgba(0, 0, 0, 0) !important;
+    text-shadow: none;
+  }
+  
+  .hexShadowCore {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: rgba(65, 65, 225, 1);
+    width: 14em;
+    height: 14em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+  }
+
+  .hexShadowOuter {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: rgba(65, 65, 225, 0.5);
+    width: 18em;
+    height: 18em;
+    position: relative;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .hexImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+  }
+  
+  .hexImage:hover {
+    opacity:  75%;
+    transform: scale(1.25);
+  }
+  
+  .hexImage-container {
+    opacity: 25%;
+  }
