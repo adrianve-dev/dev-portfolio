@@ -19,67 +19,112 @@ export default function Home() {
             Web3 Fullstack Development
         </h1>
 
-        <Row className='my-3'>
-          <Col sm='6'>
-            <div className={hexagon.hexContainer}>
-              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
-                <div className={hexagon.hexShadowCore}>
-                  <div className={hexagon.hexClip}>
-                      <div className={hexagon.hexText}>WEB3</div>  
-                      <Image className={hexagon.hexImage} src="/img/website-blue.png" alt="Web3" layout="fill" />
+        <div className='p-4'>
+          <Row className='my-3'>
+            <Col sm='6'>
+              <div className={hexagon.hexContainer}>
+                <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
+                  <div className={hexagon.hexShadowCore}>
+                    <div className={hexagon.hexClip}>
+                        <div className={hexagon.hexText}>WEB3</div>  
+                        <Image className={hexagon.hexImage} src="/img/website-blue.png" alt="Web3" layout="fill" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Col>
-          <Col sm='6'className={['lead', 'm-auto', 'text-center'].join(' ')}>
-            <div style={{zIndex:'-2', border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              Smart contract based decentralized applications (dApps) connected to the blockchain through a crypto wallet
-            </div>
-          </Col>
-        </Row>
-        
-        <Row className='my-3'>
-          <Col sm='6' className='order-sm-1'>
-            <div className={hexagon.hexContainer}>
-              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
-                <div className={hexagon.hexShadowCore}>
-                  <div className={hexagon.hexClip}>
-                      <div className={hexagon.hexText}>MOBILE</div>  
-                      <Image className={hexagon.hexImage} src="/img/phone-blue.png" alt="Mobile" layout="fill" />
+            </Col>
+            <Col sm='6'className={['lead', 'm-auto', 'text-center'].join(' ')}>
+              <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+                Smart contract based decentralized applications (dApps) connected to the blockchain through a crypto wallet
+              </div>
+            </Col>
+          </Row>
+          
+          <Row className='my-3'>
+            <Col sm='6' className='order-sm-1'>
+              <div className={hexagon.hexContainer}>
+                <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
+                  <div className={hexagon.hexShadowCore}>
+                    <div className={hexagon.hexClip}>
+                        <div className={hexagon.hexText}>MOBILE</div>  
+                        <Image className={hexagon.hexImage} src="/img/phone-blue.png" alt="Mobile" layout="fill" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Col>
-          <Col sm='6' className={['lead', 'm-auto', 'text-center', 'order-sm-0'].join(' ')}>
-            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              Cross platform mobile apps built with technology that speeds up development and delivery
-            </div>
-          </Col>
-        </Row>
+            </Col>
+            <Col sm='6' className={['lead', 'm-auto', 'text-center', 'order-sm-0'].join(' ')}>
+              <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+                Cross platform mobile apps built with technology that speeds up development and delivery
+              </div>
+            </Col>
+          </Row>
 
-        <Row className='my-3'>
-          <Col sm='6'>
-            <div className={hexagon.hexContainer}>
-              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
-                <div className={hexagon.hexShadowCore}>
-                  <div className={hexagon.hexClip}>
-                      <div className={hexagon.hexText}>ETHEREUM</div>  
-                      <Image className={hexagon.hexImage} src="/img/eth-logo-blue.png" alt="Web3" layout="fill" />
+          <Row className='my-3'>
+            <Col sm='6'>
+              <div className={hexagon.hexContainer}>
+                <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
+                  <div className={hexagon.hexShadowCore}>
+                    <div className={hexagon.hexClip}>
+                        <div className={hexagon.hexText}>ETHEREUM</div>  
+                        <Image className={hexagon.hexImage} src="/img/eth-logo-blue.png" alt="Web3" layout="fill" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Col>
-          <Col sm='6' className={['lead', 'm-auto', 'text-center'].join(' ')}>
-            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              NFTs, utility, and token generation Smart Contract development for any Ethereum-based chain
-            </div>
-          </Col>
-        </Row>
+            </Col>
+            <Col sm='6' className={['lead', 'm-auto', 'text-center'].join(' ')}>
+              <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+                NFTs, utility, and token generation Smart Contract development for any Ethereum-based chain
+              </div>
+            </Col>
+          </Row>
+        </div>
 
         <div className={decorations.parallelogram}></div>
+
+        <Row style={{color: '#114', backgroundColor: '#ddd'}} className={['p-5 align-self-stretch text-center fw-light']}>
+          <h2 className='fw-light text-center'>Tech Stack we use</h2>
+          <Row className='my-3'>
+            <h5>Web3</h5>
+            <Col sm='3' >
+              React
+            </Col>
+            <Col sm='3' >
+              React Native
+            </Col>
+            <Col sm='3' >
+              Metamask/WalletConnect
+            </Col>
+            <Col sm='3' >
+              Next.js
+            </Col>
+          </Row>
+          <Row className='my-3'>
+            <h5>Blockchain</h5>
+            <Col sm='4' >
+              Solidity
+            </Col>
+            <Col sm='4' >
+              Ethereum
+            </Col>
+            <Col sm='4' >
+              Polygon
+            </Col>
+          </Row>
+          <Row className='my-3'>
+            <h5>Backend</h5>
+            <Col sm='4' >
+              node.js
+            </Col>
+            <Col sm='4' >
+              GraphQL
+            </Col>
+            <Col sm='4' >
+              Prisma
+            </Col>
+          </Row>
+        </Row>
       </main>
 
       <footer className={styles.footer}>
