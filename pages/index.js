@@ -81,9 +81,14 @@ export default function Home() {
           </Row>
         </div>
 
-        <div className={decorations.parallelogram}></div>
+        <div className={decorations.parallelogram}></div>  
 
-        <Row style={{color: '#114', backgroundColor: '#ddd'}} className={['p-5 align-self-stretch text-center fw-light']}>
+        <Row className='mt-5 p-5 align-self-stretch text-center' style={{background: 'linear-gradient(180deg, rgba(0,0,255,0) 0%, rgba(0,0,0,0.75) 100%)'}}>
+          <hr />
+          <h3 className='fw-light'>Projects</h3>
+        </Row>
+
+        <Row style={{color: '#114', backgroundColor: '#ddd'}} className='p-5 align-self-stretch text-center fw-light'>
           <h2 className='fw-light text-center'>Tech Stack we use</h2>
           <Row className='my-3'>
             <h5>Web3</h5>
