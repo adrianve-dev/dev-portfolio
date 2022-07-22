@@ -22,7 +22,7 @@ export default function Home() {
         <Row className='my-3'>
           <Col sm='6'>
             <div className={hexagon.hexContainer}>
-              <div className={hexagon.hexShadowOuter}>
+              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
                 <div className={hexagon.hexShadowCore}>
                   <div className={hexagon.hexClip}>
                       <div className={hexagon.hexText}>WEB3</div>  
@@ -33,8 +33,8 @@ export default function Home() {
             </div>
           </Col>
           <Col sm='6'className={['lead', 'm-auto', 'text-center'].join(' ')}>
-            <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              This is some text here that describes the project so clients can view what we are doing
+            <div style={{zIndex:'-2', border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
+              Smart contract based decentralized applications (dApps) connected to the blockchain through a crypto wallet
             </div>
           </Col>
         </Row>
@@ -42,7 +42,7 @@ export default function Home() {
         <Row className='my-3'>
           <Col sm='6' className='order-sm-1'>
             <div className={hexagon.hexContainer}>
-              <div className={hexagon.hexShadowOuter}>
+              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
                 <div className={hexagon.hexShadowCore}>
                   <div className={hexagon.hexClip}>
                       <div className={hexagon.hexText}>MOBILE</div>  
@@ -54,7 +54,7 @@ export default function Home() {
           </Col>
           <Col sm='6' className={['lead', 'm-auto', 'text-center', 'order-sm-0'].join(' ')}>
             <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              This is some text here that describes the project so clients can view what we are doing
+              Cross platform mobile apps built with technology that speeds up development and delivery
             </div>
           </Col>
         </Row>
@@ -62,7 +62,7 @@ export default function Home() {
         <Row className='my-3'>
           <Col sm='6'>
             <div className={hexagon.hexContainer}>
-              <div className={hexagon.hexShadowOuter}>
+              <div className={[hexagon.hexShadowOuter, decorations.floating].join(' ')}>
                 <div className={hexagon.hexShadowCore}>
                   <div className={hexagon.hexClip}>
                       <div className={hexagon.hexText}>ETHEREUM</div>  
@@ -74,7 +74,7 @@ export default function Home() {
           </Col>
           <Col sm='6' className={['lead', 'm-auto', 'text-center'].join(' ')}>
             <div style={{border: '#66a 0.25em solid', borderRadius: '1em', boxShadow: '0 0 0.5em #4141e1', background: 'linear-gradient(100deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 75%)'}} className='py-5 px-1'>
-              This is some text here that describes the project so clients can view what we are doing
+              NFTs, utility, and token generation Smart Contract development for any Ethereum-based chain
             </div>
           </Col>
         </Row>

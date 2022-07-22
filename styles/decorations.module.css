@@ -19,3 +19,22 @@
     z-index: -5;
     background: linear-gradient(-55deg,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,.1) 85%);
 }
+
+.floating {
+    transform: translate(0em, 0em);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .floating {
+      animation: floating infinite 1s ease-in-out alternate;
+    }
+  }
+
+@keyframes floating {
+    from {
+        transform: translate(0, -0.5em);
+      }
+      to {
+        transform: translate(0, 1em);
+      }
+}

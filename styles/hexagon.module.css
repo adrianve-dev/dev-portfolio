@@ -10,6 +10,7 @@
     position: relative;
     width: 20em;
     margin: auto;
+    z-index: 1;
   }
   
   .hexClip {
@@ -40,7 +41,7 @@
 
   .hexShadowOuter {
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background: rgba(65, 65, 225, 0.5);
+    background: #282885;
     width: 18em;
     height: 18em;
     position: relative;
@@ -63,3 +64,8 @@
   .hexImage-container {
     opacity: 25%;
   }
+
+  /* 
+  #4141e1 rgba(65,65,225,0.5) = #282885
+  
+  */
