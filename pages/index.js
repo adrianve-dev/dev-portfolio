@@ -89,7 +89,7 @@ export default function Home() {
           <Row className='m-auto'>
             <Col sm='4'>
               <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
-                <Col xs='12' sm='6'>
+                <Col xs='12' sm='6' className='my-auto'>
                   <Image
                     width='100px'
                     height='100px'
@@ -106,7 +106,7 @@ export default function Home() {
             </Col>
             <Col sm='4'>
               <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
-                <Col xs='12' sm='6'>
+                <Col xs='12' sm='6' className='my-auto'>
                   <Image className='rounded-circle'
                     width='100px'
                     height='100px'
@@ -114,7 +114,7 @@ export default function Home() {
                     alt='AVA Tasks'
                   />
                 </Col>
-                <Col xs='12' sm='6'>
+                <Col xs='12' sm='6' className='my-auto'>
                   <h5 className='blueText'>AVA Tasks App</h5>
                   <hr className={'hrDark'} />
                   <div>Mobile Task App with a companion website</div> 
@@ -123,7 +123,7 @@ export default function Home() {
             </Col>
             <Col sm='4'>
               <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
-                <Col xs='12' sm='6'>
+                <Col xs='12' sm='6' className='my-auto'>
                   <Image className='rounded-circle'
                     width='100px'
                     height='100px'
