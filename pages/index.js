@@ -124,7 +124,7 @@ export default function Home() {
             <Col sm='4'>
               <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
                 <Col xs='12' sm='6'>
-                  <Image className='rounded-circle' style={{border: 'red 2px solid'}}
+                  <Image className='rounded-circle'
                     width='100px'
                     height='100px'
                     src='/img/eth-logo-blue.png'
