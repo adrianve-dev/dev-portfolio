@@ -83,14 +83,67 @@ export default function Home() {
 
         <div className={decorations.parallelogram}></div>  
 
-        <Row className='mt-5 p-5 align-self-stretch text-center' style={{background: 'linear-gradient(180deg, rgba(0,0,255,0) 0%, rgba(0,0,0,0.75) 100%)'}}>
+        <Row className='mt-5 py-5 px-3 align-self-stretch text-center' style={{background: 'linear-gradient(180deg, rgba(0,0,255,0) 0%, rgba(0,0,0,0.75) 100%)'}}>
           <hr />
-          <h3 className='fw-light'>Projects</h3>
+          <h3 className='fw-light my-4'>Projects</h3>
+          <Row className='m-auto'>
+            <Col sm='4'>
+              <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
+                <Col xs='12' sm='6'>
+                  <Image
+                    width='100px'
+                    height='100px'
+                    src='/img/cb-logo.png'
+                    alt='Chubby Buddies'
+                  />
+                </Col>
+                <Col xs='12' sm='6'>
+                  <h5 className='blueText'>Chubby Buddies</h5>
+                  <hr className={'hrDark'} />
+                  <div>NFT generative avatar project on the Rinkeby network</div> 
+                </Col>
+              </Row>
+            </Col>
+            <Col sm='4'>
+              <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
+                <Col xs='12' sm='6'>
+                  <Image className='rounded-circle'
+                    width='100px'
+                    height='100px'
+                    src='/img/ava-tasks-icon.png'
+                    alt='AVA Tasks'
+                  />
+                </Col>
+                <Col xs='12' sm='6'>
+                  <h5 className='blueText'>AVA Tasks App</h5>
+                  <hr className={'hrDark'} />
+                  <div>Mobile Task App with a companion website</div> 
+                </Col>
+              </Row>
+            </Col>
+            <Col sm='4'>
+              <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
+                <Col xs='12' sm='6'>
+                  <Image className='rounded-circle' style={{border: 'red 2px solid'}}
+                    width='100px'
+                    height='100px'
+                    src='/img/eth-logo-blue.png'
+                    alt='Chubby Buddies'
+                  />
+                </Col>
+                <Col xs='12' sm='6'>
+                  <h5 className='blueText'>Smart Contracts</h5>
+                  <hr className={'hrDark'} />
+                  <div>NFT Contracts and Token and ICO Contracts</div> 
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </Row>
 
         <Row style={{color: '#114', backgroundColor: '#ddd'}} className='p-5 align-self-stretch text-center fw-light'>
-          <h2 className='fw-light text-center'>Tech Stack we use</h2>
-          <Row className='my-3'>
+          <h2 className='fw-light text-center'>Tech Stack</h2>
+          <Row className='my-3 mx-auto'>
             <h5>Web3</h5>
             <Col sm='3' >
               React
@@ -105,7 +158,7 @@ export default function Home() {
               Next.js
             </Col>
           </Row>
-          <Row className='my-3'>
+          <Row className='my-3 mx-auto'>
             <h5>Blockchain</h5>
             <Col sm='4' >
               Solidity
@@ -117,7 +170,7 @@ export default function Home() {
               Polygon
             </Col>
           </Row>
-          <Row className='my-3'>
+          <Row className='my-3 mx-auto'>
             <h5>Backend</h5>
             <Col sm='4' >
               node.js
