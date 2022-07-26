@@ -127,7 +127,7 @@ export default function Home() {
                   <Image className='rounded-circle'
                     width='100px'
                     height='100px'
-                    src='/img/eth-logo-blue.png'
+                    src='/img/eth-logo_full.png'
                     alt='Chubby Buddies'
                   />
                 </Col>
