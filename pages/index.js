@@ -84,9 +84,9 @@ export default function Home() {
         <div className={decorations.parallelogram}></div>  
 
         <Row className='mt-5 py-5 px-3 align-self-stretch text-center' style={{background: 'linear-gradient(180deg, rgba(0,0,255,0) 0%, rgba(0,0,0,0.75) 100%)'}}>
-          <hr />
-          <h3 className='fw-light my-4'>Projects</h3>
           <Row className='m-auto'>
+            <hr />
+            <h3 className='fw-light my-4'>Projects</h3>
             <Col sm='4'>
               <Row style={{color: '#334', backgroundColor:'white', minHeight: '15em', boxShadow: '0 0 5px #333', borderRadius: '0.25em', overflow: 'hidden'}} className='fw-light p-3 m-2'>
                 <Col xs='12' sm='6' className='my-auto'>
@@ -137,6 +137,20 @@ export default function Home() {
                   <div>NFT Contracts and Token and ICO Contracts</div> 
                 </Col>
               </Row>
+            </Col>
+          </Row>
+          
+          <Row className='mt-5 py-5 align-self-stretch mx-auto text-start'>
+            <hr />
+            <h3 className='fw-light my-4 text-center'>About Me</h3>
+            <Col sm='12'>
+              &emsp; I started out on my Software Development journey by working in a corporate cubicle for a major metro. 
+              I was working in current technology but the new and innovative always excited me.
+              My interest in freedom, the individual and their collective power led me to explore blockchain technologies.
+            </Col>
+            <Col sm='12 my-3'>
+              &emsp;I was drawn to the rebalance of power that it brings through providing a means for digital peer-to-peer value transfers.
+              Since then I have been learning about and building on the Ethereum blockchain with Solidity, Truffle, and React.
             </Col>
           </Row>
         </Row>
