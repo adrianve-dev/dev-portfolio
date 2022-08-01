@@ -25,10 +25,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .floating {
-      animation: floating infinite 1s ease-in-out alternate;
-    }
+  .floating {
+    animation: floating infinite 1s ease-in-out alternate;
   }
+}
 
 @keyframes floating {
     from {
@@ -37,4 +37,43 @@
       to {
         transform: translate(0, 1em);
       }
+}
+
+.captionContainer {
+  position: relative;
+}
+
+.captionGradient {
+  position: absolute;
+  bottom: 0em;
+  left: 0em;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background: linear-gradient(180deg,hsla(0,0%,0%,.5) 10%,hsla(0,0%,0%,1) 75%);
+}
+
+.caption {
+  position: absolute;
+  bottom: 1em;
+  width: 100%
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .captionContainer:hover {
+    animation: grow-sm infinite 1s ease-in-out;
+    box-shadow: 1px 1px 0.5em #4141e1;
+  }
+  .captionContainer:hover > .captionGradient {
+    visibility: visible;
+  }
+}
+
+@keyframes grow-sm {
+  from {
+      transform: scale(1.025);
+    }
+    to {
+      transform: scale(1.025);
+    }
 }
