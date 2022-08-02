@@ -5,6 +5,7 @@ import decorations from '../styles/decorations.module.css'
 import hexagon from '../styles/hexagon.module.css'
 import { Container, Row, Col } from 'reactstrap'
 import Link from 'next/link'
+import MainNavBar from '../components/MainNavBar'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <meta name="description" content="Created by Adrian Velarde - Portfolio to showcase Web3 React, React Native, and Ethereum Development capabilities" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <MainNavBar style={{background: 'linear-gradient(to bottom, rgba(23,23,36,1) 0%, rgba(23,23,36,1) 85%, rgba(0,0,0,0) 100%'}} />
 
       <main className={styles.main}>
         <h1 className={[decorations.blueGlowLg, styles.title, 'text-center', 'mb-5'].join(' ')}>
